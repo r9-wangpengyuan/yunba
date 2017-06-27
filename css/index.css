@@ -1,0 +1,89 @@
+ul{
+    margin: 0;
+padding: 0;
+list-style: none;
+}
+
+
+
+@media screen and (min-width: 768px){
+    .banner{  height: 200px;  }
+}
+@media screen  and (max-width: 768px){
+    .banner{
+        height: 250px;}
+
+
+}
+.wrap{
+    position: relative;
+    overflow: hidden;
+    margin-top: 150px;
+    text-align: center;
+}
+.pointer li{
+    border: 1px solid #636363;
+}
+.pointer .active{
+    background: gray;
+}
+.pic2{
+    position: absolute;
+    top: 0;
+    left: 150px;
+}
+.rotate{animation: rotate-img 30s linear infinite }
+@keyframes rotate-img {
+    0%{transform: rotate(0deg)}
+    100%{transform: rotate(360deg)}
+}
+
+@media screen and  (min-width: 992px){
+    .desc{
+        position: relative;
+        text-align: right;
+        top: 150px;
+        z-index: 999;
+    }
+}
+@media screen and  (max-width: 768px){
+    .desc{
+        position: static;
+    }
+}
+.box{
+    background: white;
+    border: 1px #cdcdcd solid;
+    border-top: none;
+}
+.box img{
+    display: block;
+    margin: 0 auto;
+}
+.box p{
+   text-align: center;
+}
+.box h4{
+    height: 50px;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    background: -webkit-linear-gradient(left, #02a3da 30%,#02b0e2 60%,#00cbec 90%,#00d1ee 100%);
+}
+.meiti{
+    border-right: 1px #cdcdcd solid;
+}
+/*xuanting*/
+.dong:hover{
+    transition: transform 0.5s linear ;
+    transform:translateY(-20px) ;
+}
+.rotate2:hover{
+    transition: transform 0.5s linear;
+    transform: rotate(25deg);
+}
+.box:hover{
+    box-shadow:6px  6px 4px 4px #cdcdcd ;
+   transform: translateZ(5px);
+    transition: all 0.5s linear;
+}
